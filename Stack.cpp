@@ -50,6 +50,7 @@ int main(int argc, char** argv) {
 	kantong1.push('H');
 	kantong1.push('S');
 	kantong1.push('Z');
+	kantong1.push('L');
 	
 	cout << kantong1.pop() << endl;
 	cout << kantong1.pop() << endl;
