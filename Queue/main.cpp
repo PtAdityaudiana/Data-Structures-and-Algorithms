@@ -8,12 +8,12 @@ public:
     int rear = -1;
     char *items;
 
-    Queue(int queueSize) { // constructor
+    Queue(int queueSize) {
         size = queueSize;
         items = new char[size];
     }
 
-    void enqueue(char item) { // enqueue operation
+    void enqueue(char item) { 
         if (rear == size - 1) {
             cout << "Queue overflow, queue is full" << endl;
         } else {
@@ -22,23 +22,23 @@ public:
         }
     }
 
-    void dequeue() { // dequeue operation
-        if (front > rear) { // queue kosong
+    void dequeue() { 
+        if (front > rear) { 
             cout << "Queue is empty" << endl;
         } else {
             front++;
         }
     }
 
-    char frontElement() { // mengembalikan nilai elemen terdepan tanpa menghapusnya
+    char frontElement() { 
         if (isEmpty()) {
             cout << "Queue is empty." << endl;
-            return '\0'; // return null character jika queue kosong
+            return '\0';
         }
         return items[front];
     }
 
-    bool isEmpty() { // memeriksa apakah queue kosong
+    bool isEmpty() {
         return front > rear;
     }
 
