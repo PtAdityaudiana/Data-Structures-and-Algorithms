@@ -184,8 +184,8 @@ int main(int argc, char** argv) {
     list1->insertDataAfter('D', 'C');
     list1->insertDataAfter('E', 'D');
     list1->insertDataAfter('F', 'E');
-    
-	list1->DeleteHead();
+	
+    list1->DeleteHead();
     list1->DeleteTail();
     list1->DeleteData('D');
     cout << "Head : " << list1->head->id <<endl;
